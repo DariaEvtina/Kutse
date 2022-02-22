@@ -17,7 +17,7 @@ namespace Kutse.Models
         [RegularExpression(@"\+372",ErrorMessage ="Numbril alguses peal olema +372")]
         public string phone { get; set; }
         [Required(ErrorMessage = "Sissesta oma valik")]
-        public string willattend { get; set; }
+        public bool? willattend { get; set; }
 
     }
 }
