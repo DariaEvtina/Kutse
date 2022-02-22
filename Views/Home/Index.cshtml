@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Kuduleht";
+}
+
+<div class="jumbotron">
+    <h1>Kuste</h1>
+    <h2>@ViewBag.Greeting , kallid sõber!</h2>
+</div>
+
+<div>
+    @ViewBag.Message
+    <img src="~/images/index.jpg" />
+    @Html.ActionLink("Kutse", "Ankeet", "Ankeet", new { @class = "btn btn-primary" })
+</div>

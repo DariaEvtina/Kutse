@@ -1,0 +1,28 @@
+﻿@model Kutse.Models.Guest
+
+@{
+    ViewBag.Title = "Aitah";
+}
+
+<h2>Aitah</h2>
+<div>
+    <p>Tanan sing, @Model.name</p>
+</div>
+<div>
+    @if (Model.willattend == true)
+    {
+        @:Ootame sind kallis sõber!
+        <p>
+            <img src="~/images/index.jpg">
+        </p>
+    }
+    else
+    {
+        @:Väga kurb uudis. Näeme hiljem!
+        <p>
+            <img src="~/images/index.jpg">
+        </p>
+    }
+    @ViewBag.Message
+</div>
+
